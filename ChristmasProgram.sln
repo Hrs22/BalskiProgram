@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristmasProgram", "ChristmasProgram\ChristmasProgram.csproj", "{1F98AEDA-CD5D-4052-B2EA-9AF7649D6B0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalskiProject", "ChristmasProgram\BalskiProject.csproj", "{1F98AEDA-CD5D-4052-B2EA-9AF7649D6B0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
