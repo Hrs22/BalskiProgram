@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
@@ -124,6 +125,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>RegisterDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Balski.jpg" />
+    <None Include="Resources\Balski12.jpg" />
     <Content Include="Resources\BalskiLogo.jpg" />
   </ItemGroup>
   <ItemGroup>
