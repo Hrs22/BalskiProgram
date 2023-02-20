@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginView));
             this.txtBoxEmail = new System.Windows.Forms.RichTextBox();
             this.txtBoxPassword = new System.Windows.Forms.RichTextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
@@ -41,11 +42,11 @@
             this.txtBoxEmail.BackColor = System.Drawing.SystemColors.Info;
             this.txtBoxEmail.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtBoxEmail.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxEmail.Location = new System.Drawing.Point(61, 130);
+            this.txtBoxEmail.Location = new System.Drawing.Point(61, 120);
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(221, 30);
             this.txtBoxEmail.TabIndex = 0;
-            this.txtBoxEmail.Text = "Email or phone";
+            this.txtBoxEmail.Text = "    Email or phone";
             this.txtBoxEmail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBoxEmail_MouseClick);
             // 
             // txtBoxPassword
@@ -54,18 +55,18 @@
             this.txtBoxPassword.BackColor = System.Drawing.SystemColors.Info;
             this.txtBoxPassword.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtBoxPassword.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxPassword.Location = new System.Drawing.Point(61, 201);
+            this.txtBoxPassword.Location = new System.Drawing.Point(61, 200);
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.Size = new System.Drawing.Size(221, 30);
             this.txtBoxPassword.TabIndex = 1;
-            this.txtBoxPassword.Text = "Password";
+            this.txtBoxPassword.Text = "       Password";
             this.txtBoxPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBoxPassword_MouseClick);
             // 
             // btnLogIn
             // 
             this.btnLogIn.BackColor = System.Drawing.SystemColors.Info;
             this.btnLogIn.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogIn.Location = new System.Drawing.Point(35, 274);
+            this.btnLogIn.Location = new System.Drawing.Point(34, 275);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(274, 48);
             this.btnLogIn.TabIndex = 2;
@@ -77,7 +78,7 @@
             // 
             this.btnCreateAcc.BackColor = System.Drawing.SystemColors.Info;
             this.btnCreateAcc.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAcc.Location = new System.Drawing.Point(44, 384);
+            this.btnCreateAcc.Location = new System.Drawing.Point(48, 381);
             this.btnCreateAcc.Name = "btnCreateAcc";
             this.btnCreateAcc.Size = new System.Drawing.Size(247, 71);
             this.btnCreateAcc.TabIndex = 3;
@@ -102,7 +103,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.BackgroundImage = global::ChristmasProgram.Properties.Resources.Balski12;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(329, 569);
             this.Controls.Add(this.btnCantLog);
             this.Controls.Add(this.btnCreateAcc);
@@ -112,6 +113,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -28,7 +28,11 @@ namespace ChristmasProgram.View
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            if (true)
+            if (string.IsNullOrWhiteSpace(txtBoxEmail.Text) || string.IsNullOrWhiteSpace(txtBoxPassword.Text))
+            {
+                MessageBox.Show("Something went wrong!");
+            }
+            else if (true)
             {
                 MessageBox.Show("Succsesfully logged!");
                 MainView mv = new MainView();
@@ -36,12 +40,7 @@ namespace ChristmasProgram.View
                 mv.ShowDialog();
                 this.Close();
             }
-            else
-            {
-                MessageBox.Show("Something went wrong!");
-            }
         }
-
         private void btnCreateAcc_Click(object sender, EventArgs e)
         {
             RegisterView rv = new RegisterView();
@@ -49,7 +48,6 @@ namespace ChristmasProgram.View
             rv.ShowDialog();
             this.Close();
         }
-
         private void btnCantLog_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Sori motori nikoi ne mi plashta da pomagam");
