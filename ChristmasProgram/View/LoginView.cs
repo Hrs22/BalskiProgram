@@ -21,7 +21,6 @@ namespace ChristmasProgram.View
         {
             txtBoxEmail.Clear();
         }
-
         private void txtBoxPassword_MouseClick(object sender, MouseEventArgs e)
         {
             txtBoxPassword.Clear();
@@ -79,7 +78,6 @@ namespace ChristmasProgram.View
             t_Tip.ToolTipIcon = ToolTipIcon.Info;
             t_Tip.SetToolTip(txtBoxEmail, "Email should start with Capital letter!");
         }
-
         private void txtBoxPassword_MouseHover(object sender, EventArgs e)
         {
             txtBoxPassword.Clear();
