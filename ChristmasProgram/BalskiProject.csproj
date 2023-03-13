@@ -87,6 +87,12 @@
     <Compile Include="View\RegisterView.Designer.cs">
       <DependentUpon>RegisterView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ShopView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ShopView.Designer.cs">
+      <DependentUpon>ShopView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\RegisterView.resx">
       <DependentUpon>RegisterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShopView.resx">
+      <DependentUpon>ShopView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +130,18 @@
     <Content Include="Resources\Balski12.jpg" />
     <Content Include="Resources\BalskiLogo.ico" />
     <Content Include="Resources\BalskiLogo.jpg" />
+    <Content Include="Resources\dc.jpg" />
+    <None Include="Resources\dc1.jpg" />
+    <Content Include="Resources\fifa23.jpg" />
+    <None Include="Resources\undertale1.png" />
+    <None Include="Resources\fifa231.jpg" />
+    <Content Include="Resources\lol.jpg" />
+    <None Include="Resources\lol1.jpg" />
+    <Content Include="Resources\mc.png" />
+    <None Include="Resources\mc1.png" />
+    <Content Include="Resources\terraria.jpg" />
+    <None Include="Resources\terraria1.jpg" />
+    <Content Include="Resources\undertale.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

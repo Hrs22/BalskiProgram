@@ -24,24 +24,20 @@ namespace ChristmasProgram.View
             toolTipLearnThis.ForeColor = Color.Black;
             toolTipLearnThis.BackColor= Color.Purple;
         }
-
         private void toolTip1_Draw(object sender, DrawToolTipEventArgs e)
         {
             e.DrawBackground();
             e.DrawText();
             e.DrawBorder();
         }
-
         private void txtBoxEnterEmail_MouseClick(object sender, MouseEventArgs e)
         {
             txtBoxEnterEmail.Clear();
         }
-
         private void txtBoxEnterPassword_MouseClick(object sender, MouseEventArgs e)
         {
             txtBoxEnterPassword.Clear();
         }
-
         private void btnRegister_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtBoxEnterEmail.Text) || string.IsNullOrWhiteSpace(txtBoxEnterPassword.Text))
@@ -62,7 +58,7 @@ namespace ChristmasProgram.View
                 {
                     txtBoxEnterEmail = null;
                     txtBoxEnterPassword = null;
-                }
+                }  
 
                 con.Close();
                 MessageBox.Show("Succsesfully registered!");
@@ -70,7 +66,6 @@ namespace ChristmasProgram.View
                 this.Hide();
                 mv.ShowDialog();
                 this.Close();
-
             }
             else
             {

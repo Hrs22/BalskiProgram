@@ -37,6 +37,7 @@
             this.toolTipListOfGames = new System.Windows.Forms.ToolTip(this.components);
             this.btnChanceAcc = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnGoPurchase = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBoxWelcome
@@ -108,6 +109,18 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnGoPurchase
+            // 
+            this.btnGoPurchase.BackColor = System.Drawing.SystemColors.Info;
+            this.btnGoPurchase.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoPurchase.Location = new System.Drawing.Point(222, 208);
+            this.btnGoPurchase.Name = "btnGoPurchase";
+            this.btnGoPurchase.Size = new System.Drawing.Size(160, 36);
+            this.btnGoPurchase.TabIndex = 7;
+            this.btnGoPurchase.Text = "Go to the store";
+            this.btnGoPurchase.UseVisualStyleBackColor = false;
+            this.btnGoPurchase.Click += new System.EventHandler(this.btnGoPurchase_Click);
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,6 +128,7 @@
             this.BackColor = System.Drawing.Color.Indigo;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(573, 430);
+            this.Controls.Add(this.btnGoPurchase);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnChanceAcc);
             this.Controls.Add(this.txtBoxHoverText);
@@ -139,6 +153,7 @@
         private System.Windows.Forms.ToolTip toolTipListOfGames;
         private System.Windows.Forms.Button btnChanceAcc;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnGoPurchase;
     }
 }
 
