@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginView));
             this.txtBoxEmail = new System.Windows.Forms.RichTextBox();
             this.txtBoxPassword = new System.Windows.Forms.RichTextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnCreateAcc = new System.Windows.Forms.Button();
             this.btnCantLog = new System.Windows.Forms.Button();
+            this.toolTipEmail = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // txtBoxEmail
@@ -42,12 +44,13 @@
             this.txtBoxEmail.BackColor = System.Drawing.SystemColors.Info;
             this.txtBoxEmail.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtBoxEmail.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxEmail.Location = new System.Drawing.Point(61, 120);
+            this.txtBoxEmail.Location = new System.Drawing.Point(61, 95);
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(221, 30);
             this.txtBoxEmail.TabIndex = 0;
-            this.txtBoxEmail.Text = "    Email or phone";
+            this.txtBoxEmail.Text = "         Email ";
             this.txtBoxEmail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBoxEmail_MouseClick);
+            this.txtBoxEmail.MouseHover += new System.EventHandler(this.txtBoxEmail_MouseHover);
             // 
             // txtBoxPassword
             // 
@@ -55,20 +58,21 @@
             this.txtBoxPassword.BackColor = System.Drawing.SystemColors.Info;
             this.txtBoxPassword.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.txtBoxPassword.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxPassword.Location = new System.Drawing.Point(61, 200);
+            this.txtBoxPassword.Location = new System.Drawing.Point(61, 160);
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.Size = new System.Drawing.Size(221, 30);
             this.txtBoxPassword.TabIndex = 1;
             this.txtBoxPassword.Text = "       Password";
             this.txtBoxPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBoxPassword_MouseClick);
+            this.txtBoxPassword.MouseHover += new System.EventHandler(this.txtBoxPassword_MouseHover);
             // 
             // btnLogIn
             // 
             this.btnLogIn.BackColor = System.Drawing.SystemColors.Info;
             this.btnLogIn.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogIn.Location = new System.Drawing.Point(34, 275);
+            this.btnLogIn.Location = new System.Drawing.Point(25, 255);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(274, 48);
+            this.btnLogIn.Size = new System.Drawing.Size(292, 53);
             this.btnLogIn.TabIndex = 2;
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = false;
@@ -78,7 +82,7 @@
             // 
             this.btnCreateAcc.BackColor = System.Drawing.SystemColors.Info;
             this.btnCreateAcc.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAcc.Location = new System.Drawing.Point(48, 381);
+            this.btnCreateAcc.Location = new System.Drawing.Point(52, 384);
             this.btnCreateAcc.Name = "btnCreateAcc";
             this.btnCreateAcc.Size = new System.Drawing.Size(247, 71);
             this.btnCreateAcc.TabIndex = 3;
@@ -90,7 +94,7 @@
             // 
             this.btnCantLog.BackColor = System.Drawing.SystemColors.Info;
             this.btnCantLog.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCantLog.Location = new System.Drawing.Point(98, 477);
+            this.btnCantLog.Location = new System.Drawing.Point(102, 461);
             this.btnCantLog.Name = "btnCantLog";
             this.btnCantLog.Size = new System.Drawing.Size(148, 36);
             this.btnCantLog.TabIndex = 4;
@@ -129,5 +133,6 @@
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Button btnCreateAcc;
         private System.Windows.Forms.Button btnCantLog;
+        private System.Windows.Forms.ToolTip toolTipEmail;
     }
 }
